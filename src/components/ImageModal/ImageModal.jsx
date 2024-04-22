@@ -1,4 +1,5 @@
 import Modal from 'react-modal';
+import css from './ImageModal.module.css';
 
 const customStyles = {
   content: {
@@ -15,7 +16,7 @@ export default function ImageModal({ srcValue, isOpen, onToggle }) {
   return (
     <>
       <Modal isOpen={isOpen} onRequestClose={onToggle} style={customStyles}>
-        <img src={srcValue} />
+        <img className={css.img} src={srcValue} />
       </Modal>
     </>
   );

@@ -1,6 +1,8 @@
+import css from './LoadMoreBtn.module.css';
+
 export default function LoadMoreBtn({ onClick }) {
   return (
-    <button type="submit" onClick={onClick}>
+    <button className={css.btn} type="submit" onClick={onClick}>
       Load more
     </button>
   );
